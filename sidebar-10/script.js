@@ -1,3 +1,5 @@
+
+
 const expand_btn = document.querySelector(".expand-btn");
 
 let activeIndex;
@@ -23,7 +25,6 @@ allLinks.forEach((elem) => {
     });
   });
 });
-
 
 const mainItems = document.querySelectorAll(
   '.main-item'
