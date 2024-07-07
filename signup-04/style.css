@@ -1,13 +1,16 @@
+
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
   
 :root {
   --bg: black;
   --primary: #E68369;
   --primary-hover: #da6042;
+  --error: #e5484d;
 }
 
 body {
@@ -94,7 +97,8 @@ body::after {
   margin: 0;
 }
   
-.signup-form > input, .signup-form > button {
+.signup-form > input, 
+.signup-form > button {
   width: 100%;
   border: 0;
   height: 3.5rem;
@@ -109,7 +113,23 @@ body::after {
 }
 
 .signup-form > input::placeholder {
-  color: #949393;
+  color: rgb(167, 167, 167);
+}
+
+.power-container { 
+  background: #4b2e4d; 
+  width: 100%; 
+  height: 0.75rem; 
+  border-radius: 3rem; 
+}
+
+.power-container #power-point { 
+  background: var(--error); 
+  min-width: 0.75rem;
+  width: 1%; 
+  height: 100%; 
+  border-radius: 3rem; 
+  transition: all 0.375s;
 }
 
 .signup-form > button {
@@ -128,5 +148,6 @@ body::after {
 }
 
 .signup-form > button:hover {
-  background: #ff6843;
+  background: var(--primary-hover);
 }
+
